@@ -1,0 +1,16 @@
+{
+  "name": "nyaymitra",
+  "version": "1.0.0",
+  "private": true,
+  "description": "NyayMitra — Samjho apna document, faisla khud lo",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "npm --prefix server start",
+    "client": "npm --prefix client dev",
+    "build": "npm --prefix client build",
+    "install-all": "npm install && npm --prefix server install && npm --prefix client install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
