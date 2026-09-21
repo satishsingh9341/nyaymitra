@@ -53,5 +53,20 @@ npm --prefix server test
 
 ---
 
+## 🌐 Deploy to Vercel
+
+NyayMitra is configured for zero-config Vercel deployment with Vite frontend and Express serverless API routes (`/api/*` & `/health`):
+
+1. Go to [Vercel Dashboard - Import Project](https://vercel.com/new).
+2. Select repository **`satishsingh9341/nyaymitra`**.
+3. Under **Environment Variables**, add:
+   - `GEMINI_API_KEY`: `<Your Gemini API Key>`
+   - `GEMINI_MODEL`: `gemini-2.5-flash`
+   - `NODE_ENV`: `production`
+4. Click **Deploy**. Vercel will automatically build the client bundle and wire serverless routes.
+
+---
+
 ## 📄 License & Disclaimer
 NyayMitra provides informational legal document analysis and does not constitute legal advice or formal representation.
+
